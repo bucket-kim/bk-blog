@@ -1,3 +1,36 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: black;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  background-color: white;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  background-image: url("./assets/profile.jpg");
+  background-size: 300%;
+  background-position-x: -7em;
+  background-position-y: -1.5em;
+}
+
+.profile-name {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.profile-text {
+  color: white;
+  letter-spacing: 0.5px;
 }
