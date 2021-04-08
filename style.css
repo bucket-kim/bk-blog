@@ -13,6 +13,7 @@ header {
   align-items: center;
   background-image: url("./assets/slateBG.jpg");
   background-size: cover;
+  background-position: center;
   color: white;
   position: relative;
 }
@@ -101,6 +102,7 @@ header::after {
 }
 
 .post-title {
+  color: black;
 }
 
 .post-text {
@@ -108,6 +110,7 @@ header::after {
   line-height: 1.4;
   max-height: 65px;
   overflow: hidden;
+  color: black;
 }
 
 .nav-button.new-post-button {
@@ -181,17 +184,22 @@ footer {
   margin-bottom: 16px;
   color: #0177ed;
   transform: translateY(12px);
-  padding-right: 24px;
+  padding-left: 24px;
 }
 
 #indiv-post-title {
-  margin-bottom: 20px;
+  margin: 40px 0;
   text-align: center;
+  font-size: 36px;
 }
 
 #indiv-post-content {
   color: gray;
-  padding: 16px 24px;
+  padding: 0px 24px;
   text-indent: 2em;
   line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
 }

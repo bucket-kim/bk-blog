@@ -18,16 +18,17 @@ const getPosts = () => {
 };
 
 const buildPosts = (posts) => {
-  const timeElapsed = Date.now();
-  const postDate = new Date(timeElapsed);
-
   let content = "";
   for (post of posts) {
+    const postDate = new Date(parseInt(post.added_date)).toDateString();
     const postImage = `${API_BASE_URL}${post.post_image}`;
-    content += `<div class="posts">
+    const postLink = `/post.html?id=${post.id}`;
+    content += `
+    <a href="${postLink}">
+    <div class="posts">
     <div class="post-image" style="background-image: url(${postImage})"></div>
     <div class="post-content">
-      <div class="post-date">${postDate.toLocaleString("ko-KR")}</div>
+      <div class="post-date">${postDate}</div>
       <div class="post-title">
         <h2>${post.title}</h2>
       </div>
@@ -35,7 +36,9 @@ const buildPosts = (posts) => {
         ${post.content}
       </div>
     </div>
-  </div>`;
+  </div>
+  </a>
+  `;
   }
 
   document.querySelector(".blog-post").innerHTML = content;
