@@ -53,6 +53,11 @@ form > * {
   transition: all 0.2s ease-in-out;
 }
 
+#form-post-submit:hover {
+  background-color: #2c8ae7;
+  box-shadow: 0 0 6px 0 #64a9ee;
+}
+
 .post-photo {
   display: flex;
   align-items: center;
