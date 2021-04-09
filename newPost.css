@@ -1,0 +1,76 @@
+.body {
+  margin: auto;
+  width: 70%;
+  height: 85vh;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+form > * {
+  font-size: 18px;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-post-title,
+#form-post-content {
+  margin: 16px 0px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+#form-post-title:focus,
+#form-post-content:focus {
+  outline: none;
+}
+
+#form-post-content {
+  min-height: 300px;
+}
+
+#form-post-submit {
+  margin-top: 20px;
+  background-color: #0177ed;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border: none;
+  width: 120px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.post-photo {
+  display: flex;
+  align-items: center;
+}
+
+input[type="file"] {
+  color: rgba(0, 0, 0, 0);
+}
+
+input[type="file"]:active {
+  outline: none;
+}
+
+input::-webkit-file-upload-button {
+  margin-left: 4px;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #e3e6ea;
+  color: gray;
+}

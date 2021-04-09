@@ -5,7 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="newPost.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="newPost.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>New Post</title>
   </head>
-  <body></body>
+  <body>
+    <div class="body">
+      <div class="header"><h2>Create Post</h2></div>
+      <br />
+      <hr />
+      <div class="form-main">
+        <div class="navigation">
+          <a href="index.html">Back</a>
+        </div>
+        <div class="form-container">
+          <form>
+            <input
+              id="form-post-title"
+              type="text"
+              name="post-title"
+              placeholder="Post your title"
+            />
+            <textarea
+              id="form-post-content"
+              name="post-content"
+              placeholder="Post Content"
+            ></textarea>
+            <div class="post-photo">
+              <label>Choose Image</label>
+              <input
+                id="form-post-image"
+                type="file"
+                name="post-image"
+                accept="image/*"
+              />
+            </div>
+            <button
+              id="form-post-submit"
+              type="button"
+              onclick="uploadNewPost()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright © 2021 Bucket Kim. All rights reserved.</p>
+    </footer>
+  </body>
 </html>

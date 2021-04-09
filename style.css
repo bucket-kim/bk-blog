@@ -4,6 +4,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 header {
   background-color: black;
   height: 400px;
@@ -141,16 +145,14 @@ header::after {
 }
 
 footer {
-  bottom: 0;
-  width: 100%;
-  margin-top: 40px;
-  background-color: rgb(224, 224, 224);
   min-height: 100px;
+  background-color: #eaecee70;
+  color: #929eaa;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(100, 100, 100);
-  font-size: 12px;
+  margin-top: 40px;
+  font-size: 14px;
 }
 
 .navigation {
@@ -158,7 +160,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding-left: 24px;
 }
 
 .navigation > a {
@@ -202,3 +203,5 @@ footer {
 a {
   text-decoration: none;
 }
+
+/* new post section */
