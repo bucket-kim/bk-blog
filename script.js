@@ -10,9 +10,11 @@ const getPosts = () => {
     method: "GET",
   })
     .then((res) => {
+      console.log(res);
       return res.json();
     })
     .then((data) => {
+      console.log(data);
       buildPosts(data);
     });
 };
