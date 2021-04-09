@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8000/post/";
-const API_BASE_URL = "http://localhost:8000/";
+const API_URL = "http://localhost:5000/post/";
+const API_BASE_URL = "http://localhost:5000/";
 
 window.onload = () => {
   getPosts();

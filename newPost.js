@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000/newPost/";
+const API_URL = "http://localhost:5000/newPost/";
 
 const uploadNewPost = () => {
   const title = document.getElementById("form-post-title").value;
